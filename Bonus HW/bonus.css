@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* 使用 grid 進行配置 */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 兩列等寬 */
+    grid-template-rows: auto auto auto auto auto auto; /* 自動調整高度 */
+    gap: 10px; /* 設定行列之間的間隙，這裡改成 10px */
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .grid-item-full {
+    grid-column: span 2; /* 橫跨兩列 */
+    
+  }
+  
+  .grid-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; /* 兩列等寬 */
+    gap: 0; /* 設定行列之間的間隙，這裡改成 10px */
+  }
+  
+  .grid-item {
+    width: 100%; /* 讓內容佔據整行 */
+    display: grid;
+    grid-template-columns: auto 1fr; /* 文字占據 auto 寬度，輸入框占據剩餘寬度 */
+    gap: 10px; /* 設定行列之間的間隙，這裡改成 10px，你可以根據需要調整 */
+    align-items: center; /* 垂直居中 */
+  }
+  
+  /* 調整 input 和 textarea 寬度 */
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
